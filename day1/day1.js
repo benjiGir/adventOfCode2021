@@ -11,14 +11,28 @@ const count = () => {
     previousValue = Number(inputArr[i]);
     nextOne = Number(inputArr[i + 1]);
   
-    console.log(previousValue, nextOne);
-  
     if (nextOne > previousValue) {
-      increased = increased + 1;
+      increased = increased + 1
     }
   }
 
   return increased
 }
 
-console.log(count());
+const countWindow = () => {
+  let increased = 0
+  let previousWindow = 0
+  let nextWindow = 0
+
+  for (let i = 0; i < inputArr.length - 1; i++) {
+    previousWindow = Number(inputArr[i]) + Number(inputArr[i + 1]) + Number(inputArr[i + 2])
+    nextWindow = Number(inputArr[i + 1]) + Number(inputArr[i + 2]) + Number(inputArr[i + 3])
+    if (nextWindow > previousWindow) {
+      increased = increased + 1
+    }
+  }
+
+  return increased
+}
+
+console.log(countWindow());
