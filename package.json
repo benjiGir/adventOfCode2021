@@ -1,0 +1,23 @@
+{
+  "name": "advent-of-code-2021",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000a\u0000d\u0000v\u0000e\u0000n\u0000t\u0000O\u0000f\u0000C\u0000o\u0000d\u0000e\u00002\u00000\u00002\u00001\u0000\r\u0000 \u0000",
+  "main": "day1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjiGir/adventOfCode2021.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benjiGir/adventOfCode2021/issues"
+  },
+  "homepage": "https://github.com/benjiGir/adventOfCode2021#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
