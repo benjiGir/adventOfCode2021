@@ -2,6 +2,7 @@ const fs = require('fs');
 const input = fs.readFileSync('./input.txt', 'utf-8')
 const inputArr = input.split('\n')
 
+// Part one
 const count = () => {
   let increased = 0
   let previousValue = 0
@@ -19,6 +20,7 @@ const count = () => {
   return increased
 }
 
+// Part two
 const countWindow = () => {
   let increased = 0
   let previousWindow = 0
@@ -34,5 +36,3 @@ const countWindow = () => {
 
   return increased
 }
-
-console.log(countWindow());
