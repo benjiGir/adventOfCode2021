@@ -34,17 +34,15 @@ for (let i = 0; i < 12; i++) {
   if (oxygenGen.length === 1) break
 
   for (let j = 0; j < oxygenGen.length; j++) {
-    data[j].charAt(i) === '1' ? isOneArr.push(oxygenGen[j]) : isZeroArr.push(oxygenGen[j])
+    oxygenGen[j].charAt(i) === '1' ? isOneArr.push(oxygenGen[j]) : isZeroArr.push(oxygenGen[j])
   }
-  if (isOneArr.length > isZeroArr.length) {
+  if (isOneArr.length >= isZeroArr.length) {
     oxygenGen = []
     oxygenGen = isOneArr
   } else {
     oxygenGen = []
     oxygenGen = isZeroArr
   }
-
-  console.log(isOneArr.length, isZeroArr.length);
 }
 
 for (let i = 0; i < 12; i++) {
@@ -54,9 +52,9 @@ for (let i = 0; i < 12; i++) {
   if (dioxygenScrubber.length === 1) break
 
   for (let j = 0; j < dioxygenScrubber.length; j++) {
-    data[j].charAt(i) === '1' ? isOneArr.push(dioxygenScrubber[j]) : isZeroArr.push(dioxygenScrubber[j])
+    dioxygenScrubber[j].charAt(i) === '1' ? isOneArr.push(dioxygenScrubber[j]) : isZeroArr.push(dioxygenScrubber[j])
   }
-  if (isOneArr.length > isZeroArr.length) {
+  if (isOneArr.length >= isZeroArr.length) {
     dioxygenScrubber = []
     dioxygenScrubber = isZeroArr
   } else {
@@ -64,3 +62,5 @@ for (let i = 0; i < 12; i++) {
     dioxygenScrubber = isOneArr
   }
 }
+
+console.log(parseInt(oxygenGen[0], 2) * parseInt(dioxygenScrubber[0], 2));
